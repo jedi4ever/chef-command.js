@@ -125,7 +125,6 @@ describe('ChefCommand', function() {
     chefCmd.setExtraJson({ nodename: 'mymachine' });
     var cmd = chefCmd.generate();
 
-    console.log(cmd);
     expect(cmd.dna_json).to.contain.string('mymachine');
     done();
   });
