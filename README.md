@@ -59,9 +59,9 @@ options:
 ## Getters
 - generate() : return hash containing 
 
-`dna_json`: **string** containing the dna.json to use
-`config_rb`: **string** containing the config.rb
-`command`: **string** containing the actual CLI invocation
+- `dna_json`: **string** containing the dna.json to use
+- `config_rb`: **string** containing the config.rb
+- `command`: **string** containing the actual CLI invocation
 
     var ChefCommand = require('chef-command');
     var chefCmd = new ChefCommand();
