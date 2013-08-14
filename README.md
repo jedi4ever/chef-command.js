@@ -1,6 +1,6 @@
 # Description
 
-This generate both the correct [Opscode chef](http://opscode.com/chef) command the corresponding json file to use.
+This generates both the correct [Opscode chef](http://opscode.com/chef) command the corresponding json file to use.
 
 Documentation on Chef-Solo options:
 - <http://docs.opscode.com/chef_solo.html>
