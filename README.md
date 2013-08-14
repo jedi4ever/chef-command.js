@@ -38,7 +38,7 @@ options:
     var ChefCommand = require('chef-command');
     var chefCmd = new ChefCommand();
     chefCmd.addCookbookPath('/tmp/cookbooks'); // add a cookbook
-    chefCmd.addCookbookPath('/tmp/site-cookbooks').logLevel('debug); // example of chainable
+    chefCmd.addCookbookPath('/tmp/site-cookbooks').logLevel('debug'); // example of chainable
 
 - `addCookbookPath(path)` : adds a CookbookPath +  returns chainable self
 - `removeCookbookPath(path)` : removes a CookbookPath + returns chainable self
