@@ -35,26 +35,25 @@ options:
 - settings : a hash containing all settings
 
 ## Instance methods
-- addCookbookPath(path) : adds a CookbookPath +  returns chainable self
-- removeCookbookPath(path) : removes a CookbookPath + returns chainable self
-- addRolePath(path) : adds a RolePath +  returns chainable self
-- removeRolePath(path) : removes a RolePath + returns chainable self
-- addDataBagPath(path) : adds a DataBagPath +  returns chainable self
-- removeDataBagPath(path) : removes a DataBagPath + returns chainable self
-- setExecutable(command) : sets the executable command to command
-- setLogLevel(level) : sets the LogLevel + returns chainable self
-
     var ChefCommand = require('chef-command');
     var chefCmd = new ChefCommand();
     chefCmd.addCookbookPath('/tmp/cookbooks'); // add a cookbook
     chefCmd.addCookbookPath('/tmp/site-cookbooks').logLevel('debug); // example of chainable
 
-- addRecipe(recipe) : adds recipe to the runlist
-- addRole(role) : adds role to the run runlist
-- setRunList(array of runlist) : sets the runlist
-- setExtraJson(json) : json to merge with dna.json
-- removeRole(role): removes the role from the runlist
-- removeRecipe(recipe): removes the recipe to the runlist
+- `addCookbookPath(path)` : adds a CookbookPath +  returns chainable self
+- `removeCookbookPath(path)` : removes a CookbookPath + returns chainable self
+- `addRolePath(path)` : adds a RolePath +  returns chainable self
+- `removeRolePath(path)` : removes a RolePath + returns chainable self
+- `addDataBagPath(path)` : adds a DataBagPath +  returns chainable self
+- `removeDataBagPath(path)` : removes a DataBagPath + returns chainable self
+- `setExecutable(command)` : sets the executable command to command
+- `setLogLevel(level)` : sets the LogLevel + returns chainable self
+- `addRecipe(recipe)` : adds recipe to the runlist
+- `addRole(role)` : adds role to the run runlist
+- `setRunList(array of runlist)` : sets the runlist
+- `setExtraJson(json)` : json to merge with dna.json
+- `removeRole(role)`: removes the role from the runlist
+- `removeRecipe(recipe)`: removes the recipe to the runlist
 
 ## Getters
 - generate() : return hash containing 
