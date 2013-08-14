@@ -56,13 +56,14 @@ options:
 - `removeRecipe(recipe)`: removes the recipe to the runlist
 
 ## Getters
+    var ChefCommand = require('chef-command');
+    var chefCmd = new ChefCommand();
+    chefCmd.addCookbookPath('/tmp/cookbooks'); // add a cookbook
+    chefCmd.generate();
+
 - generate() : return hash containing 
 
 - `dna_json`: **string** containing the dna.json to use
 - `config_rb`: **string** containing the config.rb
 - `command`: **string** containing the actual CLI invocation
 
-    var ChefCommand = require('chef-command');
-    var chefCmd = new ChefCommand();
-    chefCmd.addCookbookPath('/tmp/cookbooks'); // add a cookbook
-    chefCmd.generate();
